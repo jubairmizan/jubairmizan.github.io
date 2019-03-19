@@ -1652,7 +1652,7 @@ Icon for all respective meta
 /* === Home Page Two === */
 
 #homeTwo {
-    background: url(../images/home-2.jpg) no-repeat center center;
+    background: url(../images/ycm.gif) no-repeat center center;
     background-color: #222;
     background-size: cover;
     padding: 0;
@@ -1767,7 +1767,7 @@ Icon for all respective meta
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
