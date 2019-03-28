@@ -98,7 +98,7 @@
           </div>
         </div> <!-- /.personal-info -->
         <div class="col-md-5 hidden-xs hidden-sm wow fadeInRight" style="position: absolute;right: 0;top: 30%">
-          <h1><span style="color: #4EB28F;line-height: 65px;">“First, solve the problem. Then, write the code.”</span></h1>
+          <h1><span style="color: #4EB28F;line-height: 65px;" id="sentenceForFadeOut"></span></h1>
         </div> <!-- /.quotes -->
       </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -1140,5 +1140,21 @@
   <script src="assets/js/jquery.fitvids.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="assets/js/scripts.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var text = '“ First, solve the problem. Then, write the code. ”';
+      var len = text.length;
+      var splitSen = text.split('');
+      var i = 0;
+      
+      setInterval(function() {
+        $('#sentenceForFadeOut').append(splitSen[i]);
+        i++;
+        if(i > len){
+          window.clearInterval();
+        }
+      }, 100);
+    });
+  </script>
 </body>
 </html>
